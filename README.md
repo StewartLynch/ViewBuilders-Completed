@@ -2,8 +2,6 @@
 
 This is the completed project for my YouTube video on SwiftUI ViewBuilders
 
-https://youtu.be/IbxBRzTBeC0
-
 The starter project and video is available in the notes for the video. 
 
 
