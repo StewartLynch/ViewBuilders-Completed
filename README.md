@@ -3,7 +3,8 @@
 This is the completed project for my YouTube video on SwiftUI ViewBuilders
 
 The starter project and video is available in the notes for the video. 
-NOTE: A new branch has been added with updated code for iOS 18.
+
+> NOTE: A new branch has been added with updated code for iOS 18.
 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=IbxBRzTBeC0
