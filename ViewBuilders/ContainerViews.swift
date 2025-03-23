@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContainerViews: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 MyContainer {
                     Text("Container View!")

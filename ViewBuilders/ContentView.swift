@@ -10,21 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Basics()
-                .tabItem {
-                    Image(systemName: "1.square.fill")
-                    Text("Basics")
-                }
-            ContainerViews()
-                .tabItem {
-                    Image(systemName: "2.square.fill")
-                    Text("Container View")
-                }
-            HUD()
-                .tabItem {
-                    Image(systemName: "3.square.fill")
-                    Text("HUD Display")
-                }
+            Tab( "Basics",  systemImage: "1.square.fill") {
+                Basics()
+            }
+            Tab( "Container View",  systemImage: "2.square.fill") {
+                ContainerViews()
+            }
+            Tab( "HUd",  systemImage: "3.square.fill") {
+                HUD()
+            }
         }
         .font(.headline)
 

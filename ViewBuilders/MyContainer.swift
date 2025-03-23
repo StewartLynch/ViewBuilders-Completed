@@ -21,16 +21,14 @@ struct MyContainer<Content: View>: View {
                 .padding(5)
         }
         .background(RoundedRectangle(cornerRadius: 10).fill(bgColor))
-        .foregroundColor(fgColor)
+        .foregroundStyle(fgColor)
         .shadow(radius: 5)
     }
 }
 
-struct MyContainer_Previews: PreviewProvider {
-    static var previews: some View {
-        MyContainer {
-            Text("hello")
-            Text("world!")
-        }
+#Preview {
+    MyContainer {
+        Text("hello")
+        Text("world!")
     }
 }

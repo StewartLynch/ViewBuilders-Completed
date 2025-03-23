@@ -10,7 +10,7 @@ import SwiftUI
 struct HUD: View {
     @State private var isShowingHUD = false
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 if isShowingHUD {
                     HUDView(isShowingHUD: $isShowingHUD) {
@@ -25,7 +25,7 @@ struct HUD: View {
                     }
                 }
             }
-                .navigationTitle("Heads Up Display")
+            .navigationTitle("Heads Up Display")
         }
     }
 }
@@ -52,7 +52,7 @@ struct HUDView<Content: View>:  View {
         }
         .zIndex(1.0)
         .transition(.move(edge: .top))
-        .animation(.spring())
+        .animation(.spring(), value: isShowingHUD)
         .onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 withAnimation {

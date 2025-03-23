@@ -10,7 +10,7 @@ import SwiftUI
 struct Basics: View {
     @State private var isSquare = true
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Button {
                 isSquare.toggle()
             } label: {
